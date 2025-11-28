@@ -3,312 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Modern Responsive Website</title>
+    <title>Zavala737 | Portfolio</title>
     <style>
-        /* Reset & Base */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fafafa;
-        }
-        
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        img {
-            display: block;
-            max-width: 100%;
-        }
-        
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Segoe UI',Arial,sans-serif;line-height:1.6;color:#333;background:#fafafa}
+        a{text-decoration:none;color:inherit}
+        img{display:block;max-width:100%}
+
         /* Navbar */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(10px);
-            color: white;
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            letter-spacing: -1px;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 3rem;
-        }
-        
-        .nav-links a {
-            font-weight: 500;
-            font-size: 1.1rem;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: #60a5fa;
-        }
-        
-        .hamburger {
-            display: none;
-            font-size: 1.8rem;
-            cursor: pointer;
-        }
-        
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            min-height: 600px;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&q=80') center/cover no-repeat;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 0 5%;
-        }
-        
-        .hero h1 {
-            font-size: clamp(3rem, 8vw, 6rem);
-            margin-bottom: 1rem;
-            font-weight: 800;
-        }
-        
-        .hero p {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            max-width: 800px;
-            opacity: 0.95;
-        }
-        
-        /* Body Text Section */
-        .body-text {
-            padding: 100px 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.2rem;
-            line-height: 1.8;
-        }
-        
-        .body-text h2 {
-            font-size: 2.8rem;
-            margin-bottom: 2rem;
-            color: #1e293b;
-        }
-        
-        /* Cards Grid */
-        .cards-section {
-            padding: 80px 5%;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-            margin-top: 50px;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;
-        }
-        
-        .card:hover {
-            transform: translateY(-12px) scale(1.03);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
-        
-        .card img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-        }
-        
-        .card:hover img {
-            transform: scale(1.08);
-        }
-        
-        .card-content {
-            padding: 30px 24px;
-            text-align: center;
-        }
-        
-        .card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 12px;
-            color: #1e293b;
-        }
-        
-        .card p {
-            color: #64748b;
-            font-size: 1.05rem;
-        }
-        
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .cards-grid {
-                grid-template-columns: 1fr;
-                gap: 50px;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-            
-            .nav-links {
-                position: fixed;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: rgba(15, 23, 42, 0.98);
-                backdrop-filter: blur(10px);
-                flex-direction: column;
-                align-items: center;
-                padding: 2rem 0;
-                gap: 2rem;
-                transform: translateY(-100%);
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.4s ease;
-            }
-            
-            .nav-links.active {
-                transform: translateY(0);
-                opacity: 1;
-                visibility: visible;
-            }
-            
-            .body-text {
-                padding: 80px 5%;
-            }
-            
-            .cards-section {
-                padding: 60px 5%;
-            }
+        .navbar{position:fixed;top:0;left:0;width:100%;background:rgba(15,23,42,0.95);backdrop-filter:blur(10px);color:white;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;z-index:1000}
+        .logo{font-size:1.8rem;font-weight:700}
+        .nav-links{display:flex;gap:2.2rem;flex-wrap:wrap}
+        .nav-links a{font-weight:500;font-size:1.1rem;padding:0.4rem 0;transition:color .3s}
+        .nav-links a:hover{color:#60a5fa}
+        .hamburger{display:none;font-size:1.8rem;cursor:pointer}
+
+        /* Hero */
+        .hero{height:100vh;min-height:600px;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&q=80') center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white}
+        .hero h1{font-size:clamp(3rem,8vw,6rem);margin-bottom:1rem;font-weight:800}
+        .hero p{font-size:clamp(1.2rem,3vw,1.8rem);opacity:.95}
+
+        /* Cards Section */
+        .cards-section{padding:120px 5%;max-width:1600px;margin:0 auto}
+        .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:40px}
+        .card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.1);transition:all .4s;cursor:pointer}
+        .card:hover{transform:translateY(-15px);box-shadow:0 25px 50px rgba(0,0,0,0.2)}
+        .card img{width:100%;height:260px;object-fit:cover}
+        .card-content{padding:30px;text-align:center}
+        .card h3{font-size:1.7rem;margin-bottom:10px;color:#1e293b}
+        .card p{color:#64748b;font-size:1.05rem}
+
+        @media(max-width:768px){
+            .hamburger{display:block}
+            .nav-links{position:fixed;top:70px;left:0;width:100%;background:rgba(15,23,42,0.98);flex-direction:column;padding:20px 0;gap:20px;transform:translateY(-200%);opacity:0;transition:all .4s}
+            .nav-links.active{transform:translateY(0);opacity:1}
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+
+    <!-- Navigation – 8 links exactly as you wanted -->
     <nav class="navbar">
-        <div class="logo">YourLogo</div>
+        <div class="logo">Zavala737</div>
         <div class="hamburger">☰</div>
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="p1.html">P1</a>
+            <a href="p2.html">P2</a>
+            <a href="p3.html">P3</a>
+            <a href="p4.html">P4</a>
+            <a href="p5.html">P5</a>
         </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero">
-        <h1>Build Something Amazing</h1>
-        <p>Modern, responsive, and crafted with precision for all devices</p>
+        <h1>Zavala737</h1>
+        <p>Web Developer & Designer</p>
     </section>
 
-    <!-- Body Text -->
-    <section class="body-text">
-        <h2>We Create Beautiful Digital Experiences</h2>
-        <p>Whether you're launching a startup or scaling an enterprise, our solutions are designed to grow with you. Fully responsive, lightning-fast, and pixel-perfect on every screen size — from desktop to mobile.</p>
-    </section>
-
-    <!-- Cards Grid (2 across on desktop/tablet, 1 on mobile) -->
+    <!-- 5 Beautiful Cards – each links to its P1–P5 page -->
     <section class="cards-section">
         <div class="cards-grid">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1519389951291-2d96b80f07b4?w=800&q=80" alt="Web Design">
-                <div class="card-content">
-                    <h3>Web Design</h3>
-                    <p>Stunning, modern designs that capture attention and convert visitors.</p>
-                </div>
-            </div>
-            
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c2f2?w=800&q=80" alt="Development">
-                <div class="card-content">
-                    <h3>Development</h3>
-                    <p>Clean, fast, maintainable code built with the latest technologies.</p>
-                </div>
-            </div>
-            
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="SEO">
-                <div class="card-content">
-                    <h3>SEO Optimization</h3>
-                    <p>Rank higher and reach your audience with proven strategies.</p>
-                </div>
-            </div>
-            
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80" alt="Branding">
-                <div class="card-content">
-                    <h3>Branding</h3>
-                    <p>Memorable identities that make your business stand out.</p>
-                </div>
-            </div>
-            
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=800&q=80" alt="Support">
-                <div class="card-content">
-                    <h3>Ongoing Support</h3>
-                    <p>Reliable maintenance and updates so you can focus on growth.</p>
-                </div>
-            </div>
-            
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1558655146-9f40138ed1cb?w=800&q=80" alt="Performance">
-                <div class="card-content">
-                    <h3>Performance</h3>
-                    <p>Lightning-fast websites that deliver exceptional user experience.</p>
-                </div>
-            </div>
+            <a href="p1.html" class="card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="P1">
+                <div class="card-content"><h3>P1</h3><p>Modern web application</p></div>
+            </a>
+            <a href="p2.html" class="card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c2f2?w=800" alt="P2">
+                <div class="card-content"><h3>P2</h3><p>E-commerce platform</p></div>
+            </a>
+            <a href="p3.html" class="card">
+                <img src="https://images.unsplash.com/photo-1558655146-9f40138ed1cb?w=800" alt="P3">
+                <div class="card-content"><h3>P3</h3><p>Analytics dashboard</p></div>
+            </a>
+            <a href="p4.html" class="card">
+                <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800" alt="P4">
+                <div class="card-content"><h3>P4</h3><p>Brand & landing page</p></div>
+            </a>
+            <a href="p5.html" class="card">
+                <img src="https://images.unsplash.com/photo-1519389951291-2d96b80f07b4?w=800" alt="P5">
+                <div class="card-content"><h3>P5</h3><p>Mobile-first design</p></div>
+            </a>
         </div>
     </section>
 
     <script>
-        // Hamburger menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
-        });
-        
-        // Close menu when clicking a link (mobile)
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                hamburger.textContent = '☰';
-            });
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
 </body>
