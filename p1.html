@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1 | Zavala737</title>
+    <style>
+        body{margin:0;font-family:'Segoe UI',sans-serif;background:#fafafa;color:#333}
+        .navbar{position:fixed;top:0;width:100%;background:rgba(15,23,42,0.95);backdrop-filter:blur(10px);color:white;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;z-index:1000}
+        .logo{font-size:1.8rem;font-weight:700}
+        .nav-links{display:flex;gap:2.2rem}
+        .nav-links a{color:white;font-weight:500;transition:color .3s}
+        .nav-links a:hover{color:#60a5fa}
+        .hamburger{display:none;cursor:pointer;font-size:1.8rem}
+
+        .hero{
+            height:100vh;
+            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920') center/cover no-repeat;
+            display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white;
+        }
+        .hero h1{font-size:6rem;font-weight:800;margin-bottom:0.5rem}
+        .hero .subtitle{font-size:2rem;margin-bottom:1.5rem;opacity:0.9}
+        .hero p{max-width:800px;font-size:1.2rem;line-height:1.8;opacity:0.85}
+
+        .divider{
+            height:4px;background:#60a5fa;margin:120px 30px;border-radius:2px;
+        }
+
+        @media(max-width:768px){
+            .hamburger{display:block}
+            .nav-links{position:fixed;top:70px;left:0;width:100%;background:rgba(15,23,42,0.98);flex-direction:column;padding:25px 0;gap:25px;transform:translateY(-100%);opacity:0;transition:.4s}
+            .nav-links.active{transform:translateY(0);opacity:1}
+            .hero h1{font-size:4rem}
+            .hero .subtitle{font-size:1.5rem}
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Zavala737</div>
+        <div class="hamburger">Menu</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="p1.html">P1</a>
+            <a href="p2.html">P2</a>
+            <a href="p3.html">P3</a>
+            <a href="p4.html">P4</a>
+            <a href="p5.html">P5</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>P1</h1>
+        <div class="subtitle">Modern Web Application</div>
+        <p>This is a fully responsive web app built with React and Tailwind CSS. Features include real-time data, dark mode, and smooth animations. Perfect for startups and modern businesses.</p>
+    </section>
+
+    <!-- Horizontal line with 30px margin on sides -->
+    <div class="divider"></div>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
